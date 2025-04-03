@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Demo</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ResponsiveDesign</div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Modern CSS Layouts</h1>
+            <p>Learn how to create responsive layouts using Flexbox and CSS Grid with media queries.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="main-content">
+            <div class="card">
+                <img src="/api/placeholder/600/400" alt="CSS Flexbox">
+                <div class="card-content">
+                    <h3>CSS Flexbox</h3>
+                    <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/api/placeholder/600/400" alt="CSS Grid">
+                <div class="card-content">
+                    <h3>CSS Grid</h3>
+                    <p>Grid is a two-dimensional layout system designed for complex layouts and alignments.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/api/placeholder/600/400" alt="Media Queries">
+                <div class="card-content">
+                    <h3>Media Queries</h3>
+                    <p>Media queries allow you to apply CSS styles based on device characteristics.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <div style="font-size: 2.5rem; color: #3498db;">🔄</div>
+                <h3>Flexible Layouts</h3>
+                <p>Create layouts that adapt to any screen size automatically.</p>
+            </div>
+            <div class="feature">
+                <div style="font-size: 2.5rem; color: #3498db;">📱</div>
+                <h3>Mobile-First Design</h3>
+                <p>Design for mobile devices first, then enhance for larger screens.</p>
+            </div>
+            <div class="feature">
+                <div style="font-size: 2.5rem; color: #3498db;">⚡</div>
+                <h3>Optimized Performance</h3>
+                <p>Fast loading and smooth rendering across all devices.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ResponsiveDesign. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
